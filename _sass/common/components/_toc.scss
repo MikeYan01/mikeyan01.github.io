@@ -32,6 +32,7 @@ ul.toc {
   .toc-h4,
   .toc-h5,
   .toc-h6 {
+    margin-bottom: map-get($spacers, 2);
     &, a {
       font-size: map-get($base, font-size-xs);
       font-weight: map-get($base, font-weight);
@@ -52,20 +53,21 @@ ul.toc {
       @include link-colors($text-color-d, $main-color-1);
     }
   }
-  .toc-h2 {
+  .toc-h2 { 
+    margin-left: map-get($spacers, 2);
     &, a {
       font-weight: map-get($base, font-weight-bold);
     }
   }
   .toc-h3 {
-    margin-left: map-get($spacers, 3);
+    margin-left: map-get($spacers, 4);
   }
   .toc-h4 {
-    margin-left: map-get($spacers, 3) * 2;
+    margin-left: map-get($spacers, 4) * 2;
   }
   .toc-h5,
   .toc-h6 {
-    margin-left: map-get($spacers, 3) * 3;
+    margin-left: map-get($spacers, 4) * 3;
   }
   .toc-h6 {
     color: $text-color-l;
