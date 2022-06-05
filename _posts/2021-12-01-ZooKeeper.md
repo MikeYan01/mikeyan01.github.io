@@ -56,7 +56,6 @@ ZooKeeper是一个为分布式应用提供一致性服务的开源软件。具�
 - follower收到后会将其以事务的形式写入到本地日志中，并向leader发送反馈ack。leader会等待其他follower的回复，当收到一半以上的follower响应时，leader会向其他节点发送commit消息，同时leader提交该提案。
 
 
-
 ## 会话管理
 在Zookeeper客户端与服务端成功完成连接创建后，就创建了一个会话，Zookeeper会话在整个运行期间的生命周期中，会在不同的会话状态中之间进行切换。
 
