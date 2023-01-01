@@ -9,7 +9,7 @@ en: &EN
   VIEWS                   : "views"
   LAST_UPDATED            : "Last updated"
   PREVIOUS                : "PREVIOUS"
-  NEXT                    : "NEXT"a
+  NEXT                    : "NEXT"
   ARTICLE_DATE_FORMAT     : "%b %d, %Y"
   ARTICLE_LIST_DATE_FORMAT: "%b %d"
   STATISTICS              : "[POST_COUNT] post articles, [PAGE_COUNT] pages."
