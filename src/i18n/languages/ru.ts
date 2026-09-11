@@ -1,0 +1,217 @@
+import Key from "../i18nKey";
+import type { Translation } from "../translation";
+
+export const ru: Translation = {
+	[Key.home]: "Главная",
+	[Key.about]: "О нас",
+	[Key.archive]: "Архив",
+	[Key.search]: "Поиск",
+	[Key.searchNoResults]: "Результаты не найдены.",
+	[Key.searchTypeSomething]: "Введите ключевое слово для поиска...",
+	[Key.searchLoading]: "Поиск...",
+	[Key.searchSummary]: "Резюме",
+	[Key.searchContent]: "Содержание",
+	[Key.searchViewMore]: "Показать еще ({count} шт)",
+	[Key.other]: "Прочее",
+
+	// Группы меню навигации
+	[Key.navArticles]: "Статьи",
+	[Key.navSocial]: "Соцсети",
+	[Key.navMine]: "Моё",
+	[Key.navAbout]: "Обо мне",
+	[Key.navLinks]: "Ссылки",
+	[Key.all]: "Все",
+
+	[Key.tags]: "Теги",
+	[Key.categories]: "Категории",
+	[Key.allCategories]: "Все категории",
+	[Key.allTags]: "Все теги",
+	[Key.allSeries]: "Все серии",
+	[Key.recentPosts]: "Последние посты",
+	[Key.postList]: "Список постов",
+	[Key.tableOfContents]: "Содержание",
+	[Key.tocEmpty]: "На этой странице нет оглавления",
+	[Key.untitled]: "Без названия",
+	[Key.uncategorized]: "Без категории",
+	[Key.noTags]: "Нет тегов",
+
+	[Key.wordCount]: "слово",
+	[Key.wordsCount]: "слова",
+	[Key.minuteCount]: "минута",
+	[Key.minutesCount]: "минуты",
+	[Key.postCount]: "пост",
+	[Key.postsCount]: "постов",
+	[Key.tagsCount]: "тегов",
+	[Key.noData]: "Нет данных",
+
+	[Key.themeColor]: "Цвет темы",
+
+	[Key.lightMode]: "Светлая",
+	[Key.darkMode]: "Тёмная",
+	[Key.systemMode]: "Система",
+
+	[Key.more]: "Ещё",
+	[Key.collapse]: "Свернуть",
+
+	[Key.author]: "Автор",
+	[Key.publishedAt]: "Опубликовано",
+	[Key.updatedAt]: "Обновлено",
+	[Key.readTime]: "Время чтения",
+	[Key.license]: "Лицензия",
+
+	// Пагинация
+	[Key.paginationFirst]: "Первая",
+	[Key.paginationPrev]: "Предыдущая",
+	[Key.paginationNext]: "Следующая",
+	[Key.paginationLast]: "Последняя",
+	[Key.paginationPage]: "Страница",
+	[Key.paginationOf]: "из",
+	[Key.paginationTotal]: ", всего",
+	[Key.paginationRecords]: " записей",
+	[Key.paginationJump]: "Перейти к странице",
+
+	// 404 Страница
+	[Key.notFound]: "404",
+	[Key.notFoundTitle]: "Страница не найдена",
+	[Key.notFoundDescription]:
+		"Извините, страница, которую вы посетили, не существует или была перемещена.",
+	[Key.backToHome]: "Вернуться на главную",
+
+	// RSS Страница
+	[Key.rss]: "RSS лента",
+	[Key.rssDescription]: "Подпишитесь, чтобы получать последние обновления",
+	[Key.rssSubtitle]:
+		"Подписаться через RSS, чтобы сразу получать последние статьи и обновления",
+	[Key.rssLink]: "RSS ссылка",
+	[Key.rssCopyToReader]: "Скопировать ссылку в ваш RSS читатель",
+	[Key.rssCopyLink]: "Скопировать ссылку",
+	[Key.rssLatestPosts]: "Последние посты",
+	[Key.rssWhatIsRSS]: "Что такое RSS?",
+	[Key.rssWhatIsRSSDescription]:
+		"RSS (Really Simple Syndication) — стандартный формат для публикации часто обновляемого контента. С RSS вы можете:",
+	[Key.rssBenefit1]:
+		"Получать последний контент сайта вовремя без ручного посещения",
+	[Key.rssBenefit2]: "Управлять подписками на несколько сайтов в одном месте",
+	[Key.rssBenefit3]: "Не пропускать важные обновления и статьи",
+	[Key.rssBenefit4]: "Наслаждаться чистым чтением без рекламы",
+	[Key.rssHowToUse]:
+		"Рекомендуется использовать Feedly, Inoreader или другие RSS читатели для подписки на этот сайт.",
+	[Key.rssCopied]: "RSS ссылка скопирована в буфер обмена!",
+	[Key.rssCopyFailed]:
+		"Ошибка копирования, пожалуйста, скопируйте ссылку вручную",
+
+	// Atom Page
+	[Key.atom]: "Atom-лента",
+	[Key.atomDescription]: "Подпишитесь на последние обновления",
+	[Key.atomSubtitle]:
+		"Подпишитесь через Atom, чтобы сразу получать последние статьи и обновления",
+	[Key.atomLink]: "Atom-ссылка",
+	[Key.atomCopyToReader]: "Скопируйте ссылку в свой Atom-ридер",
+	[Key.atomCopied]: "Atom-ссылка скопирована в буфер обмена!",
+
+	[Key.year]: "год",
+	[Key.month]: "месяц",
+	[Key.day]: "день",
+	[Key.hour]: "час",
+	[Key.minute]: "минута",
+	[Key.second]: "секунда",
+
+	// Статистика просмотров
+	[Key.pageViews]: "Просмотры",
+	[Key.pageViewsLoading]: "Загрузка...",
+	[Key.pageViewsError]: "Статистика недоступна",
+
+	// Закреплено
+	[Key.pinned]: "Закреплено",
+
+	// Серия статей
+	[Key.series]: "Серии",
+	[Key.seriesPartOf]: "Часть серии",
+	[Key.seriesPart]: "Часть {n}",
+	[Key.seriesThisArticle]: "Эта статья",
+	[Key.noSeries]: "Пока нет серий",
+
+	// Зашифровано
+	[Key.postEncrypted]: "Эта статья зашифрована",
+	[Key.sakuraEffect]: "Эффект сакуры",
+	[Key.effectsSettings]: "Настройки эффектов",
+	[Key.overlaySettings]: "Настройки прозрачности",
+	[Key.overlayOpacity]: "Прозрачность обоев",
+	[Key.overlayBlur]: "Размытие фона",
+	[Key.overlayCardOpacity]: "Прозрачность карточек",
+
+	// Вкладки панели настроек
+	[Key.settingsTabAppearance]: "Оформление",
+	[Key.settingsTabEffects]: "Эффекты",
+
+	// Стиль карточек
+	[Key.cardSettings]: "Стиль карточек",
+	[Key.cardBorder]: "Рамка и тень карточек",
+	[Key.cardFollowTheme]: "Карточки跟随主题色",
+
+	// Макет списка сообщений
+	[Key.postListLayout]: "Макет списка сообщений",
+	[Key.postListLayoutList]: "Список",
+	[Key.postListLayoutGrid]: "Сетка",
+
+	// Статистика сайта
+	[Key.siteStats]: "Статистика сайта",
+	[Key.siteStatsPostCount]: "Статьи",
+	[Key.siteStatsCategoryCount]: "Категории",
+	[Key.siteStatsTagCount]: "Теги",
+	[Key.siteStatsTotalWords]: "Всего слов",
+	[Key.siteStatsRunningDays]: "Дней работы",
+	[Key.siteStatsLastUpdate]: "Последняя активность",
+	[Key.siteStatsDaysAgo]: "{days} дней назад",
+	[Key.siteStatsDays]: "{days} дней",
+	[Key.today]: "Сегодня",
+
+	// Компонент календаря
+	[Key.calendarSunday]: "Вс",
+	[Key.calendarMonday]: "Пн",
+	[Key.calendarTuesday]: "Вт",
+	[Key.calendarWednesday]: "Ср",
+	[Key.calendarThursday]: "Чт",
+	[Key.calendarFriday]: "Пт",
+	[Key.calendarSaturday]: "Сб",
+	[Key.calendarJanuary]: "Янв",
+	[Key.calendarFebruary]: "Фев",
+	[Key.calendarMarch]: "Мар",
+	[Key.calendarApril]: "Апр",
+	[Key.calendarMay]: "Май",
+	[Key.calendarJune]: "Июн",
+	[Key.calendarJuly]: "Июл",
+	[Key.calendarAugust]: "Авг",
+	[Key.calendarSeptember]: "Сен",
+	[Key.calendarOctober]: "Окт",
+	[Key.calendarNovember]: "Ноя",
+	[Key.calendarDecember]: "Дек",
+	[Key.calendar]: "Календарь сайта",
+	[Key.calendarHeatmapWeek]: "Неделя {week} {month}, {count} записей",
+	[Key.copied]: "Скопировано",
+	[Key.copyLink]: "Копировать ссылку",
+
+	// Конфигурация блоков коллапсируемого кода
+	[Key.codeCollapsibleShowMore]: "Развернуть",
+	[Key.codeCollapsibleShowLess]: "Свернуть",
+	[Key.codeCollapsibleExpanded]: "Блок кода развернут",
+	[Key.codeCollapsibleCollapsed]: "Блок кода свернут",
+
+	// Защита паролем
+	[Key.passwordProtected]: "Защищено паролем",
+	[Key.passwordProtectedDesc]:
+		"Этот контент защищён паролем. Пожалуйста, введите пароль для просмотра.",
+	[Key.passwordHint]: "Подсказка",
+	[Key.passwordPlaceholder]: "Введите пароль",
+	[Key.passwordSubmit]: "Разблокировать",
+	[Key.passwordError]: "Неверный пароль, попробуйте снова.",
+	[Key.passwordProtectedRss]:
+		"Эта статья зашифрована. Пожалуйста, посетите сайт для просмотра.",
+
+	// Чтение без отвлечений
+	[Key.immersiveReading]: "Чтение без отвлечений",
+	[Key.enterImmersiveReading]: "Войти в режим чтения",
+	[Key.exitImmersiveReading]: "Выйти из режима чтения",
+	[Key.tocExpand]: "Развернуть оглавление",
+	[Key.tocCollapse]: "Свернуть оглавление",
+};

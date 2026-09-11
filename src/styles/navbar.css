@@ -1,0 +1,49 @@
+#navbar > div {
+    position: relative;
+    background-color: var(--card-bg);
+    border: 1px solid transparent;
+    border-radius: 0 0 0.75rem 0.75rem;
+    box-shadow: inset 0 1px 0 var(--navbar-glass-highlight), 0 1px 0 var(--navbar-glass-hairline);
+    transition: background-color 0.36s ease, border-color 0.36s ease, box-shadow 0.36s ease;
+    --navbar-panel-inset: calc(1rem + max(0px, (100% - 2rem - var(--page-width)) / 2));
+}
+
+#navbar {
+    border-radius: 0 0 0.75rem 0.75rem;
+}
+
+#navbar.navbar-sticky-shadow {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+:root.dark #navbar.navbar-sticky-shadow {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35);
+}
+
+#navbar-wrapper #navbar[data-full-width="true"] > div {
+    border-radius: 0 !important;
+    width: 100% !important;
+    max-width: none !important;
+    margin: 0 !important;
+}
+
+#navbar > div #search-panel,
+#navbar > div #display-setting {
+    right: var(--navbar-panel-inset);
+}
+
+@media (max-width: 767px) {
+    #navbar > div {
+        border-radius: 0 !important;
+    }
+
+    #navbar > div #search-panel {
+        left: var(--navbar-panel-inset);
+    }
+}
+
+@media (max-width: 1279px) {
+    .navbar-icon {
+        display: none !important;
+    }
+}

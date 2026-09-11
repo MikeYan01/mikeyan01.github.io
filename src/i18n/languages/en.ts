@@ -1,0 +1,216 @@
+import Key from "../i18nKey";
+import type { Translation } from "../translation";
+
+export const en: Translation = {
+	[Key.home]: "Home",
+	[Key.about]: "About",
+	[Key.archive]: "Archive",
+	[Key.search]: "Search",
+	[Key.searchNoResults]: "No results found.",
+	[Key.searchTypeSomething]: "Type something to search...",
+	[Key.searchLoading]: "Searching...",
+	[Key.searchSummary]: "Summary",
+	[Key.searchContent]: "Content",
+	[Key.searchViewMore]: "View more results ({count} more)",
+	[Key.other]: "Other",
+
+	// Navbar menu groups
+	[Key.navArticles]: "Articles",
+	[Key.navSocial]: "Social",
+	[Key.navMine]: "Mine",
+	[Key.navAbout]: "About",
+	[Key.navLinks]: "Links",
+	[Key.all]: "All",
+
+	[Key.tags]: "Tags",
+	[Key.categories]: "Categories",
+	[Key.allCategories]: "All Categories",
+	[Key.allTags]: "All Tags",
+	[Key.allSeries]: "All Series",
+	[Key.recentPosts]: "Recent Posts",
+	[Key.postList]: "Post List",
+	[Key.tableOfContents]: "Table of Contents",
+	[Key.tocEmpty]: "No table of contents on this page",
+	[Key.untitled]: "Untitled",
+	[Key.uncategorized]: "Uncategorized",
+	[Key.noTags]: "No Tags",
+
+	[Key.wordCount]: "word",
+	[Key.wordsCount]: "words",
+	[Key.minuteCount]: "minute",
+	[Key.minutesCount]: "minutes",
+	[Key.postCount]: "post",
+	[Key.postsCount]: "posts",
+	[Key.tagsCount]: "tags",
+	[Key.noData]: "No data yet",
+
+	[Key.themeColor]: "Theme Color",
+
+	[Key.lightMode]: "Light",
+	[Key.darkMode]: "Dark",
+	[Key.systemMode]: "System",
+
+	[Key.more]: "More",
+	[Key.collapse]: "Collapse",
+
+	[Key.author]: "Author",
+	[Key.publishedAt]: "Published at",
+	[Key.updatedAt]: "Updated at",
+	[Key.readTime]: "Read time",
+	[Key.license]: "License",
+
+	// Pagination
+	[Key.paginationFirst]: "First",
+	[Key.paginationPrev]: "Previous",
+	[Key.paginationNext]: "Next",
+	[Key.paginationLast]: "Last",
+	[Key.paginationPage]: "Page",
+	[Key.paginationOf]: "of",
+	[Key.paginationTotal]: ", Total",
+	[Key.paginationRecords]: " records",
+	[Key.paginationJump]: "Jump to page",
+
+	// 404 Page
+	[Key.notFound]: "404",
+	[Key.notFoundTitle]: "Page Not Found",
+	[Key.notFoundDescription]:
+		"Sorry, the page you visited does not exist or has been moved.",
+	[Key.backToHome]: "Back to Home",
+
+	// RSS Page
+	[Key.rss]: "RSS Feed",
+	[Key.rssDescription]: "Subscribe to get latest updates",
+	[Key.rssSubtitle]:
+		"Subscribe via RSS to get the latest articles and updates imediately",
+	[Key.rssLink]: "RSS Link",
+	[Key.rssCopyToReader]: "Copy link to your RSS reader",
+	[Key.rssCopyLink]: "Copy Link",
+	[Key.rssLatestPosts]: "Latest Posts",
+	[Key.rssWhatIsRSS]: "What is RSS?",
+	[Key.rssWhatIsRSSDescription]:
+		"RSS (Really Simple Syndication) is a standard format for publishing frequently updated content. With RSS, you can:",
+	[Key.rssBenefit1]:
+		"Get the latest website content in time without manually visiting",
+	[Key.rssBenefit2]: "Manage subscriptions to multiple websites in one place",
+	[Key.rssBenefit3]: "Avoid missing important updates and articles",
+	[Key.rssBenefit4]: "Enjoy an ad-free, clean reading experience",
+	[Key.rssHowToUse]:
+		"It is recommended to use Feedly, Inoreader or other RSS readers to subscribe to this site.",
+	[Key.rssCopied]: "RSS link copied to clipboard!",
+	[Key.rssCopyFailed]: "Copy failed, please copy the link manually",
+
+	// Atom Page
+	[Key.atom]: "Atom Feed",
+	[Key.atomDescription]: "Subscribe to get latest updates",
+	[Key.atomSubtitle]:
+		"Subscribe via Atom to get the latest articles and updates immediately",
+	[Key.atomLink]: "Atom Link",
+	[Key.atomCopyToReader]: "Copy link to your Atom reader",
+	[Key.atomCopied]: "Atom link copied to clipboard!",
+
+	[Key.year]: "year",
+	[Key.month]: "month",
+	[Key.day]: "day",
+	[Key.hour]: "hour",
+	[Key.minute]: "minute",
+	[Key.second]: "second",
+
+	// Page Views Statistics
+	[Key.pageViews]: "Views",
+	[Key.pageViewsLoading]: "Loading...",
+	[Key.pageViewsError]: "Stats unavailable",
+
+	// Pinned
+	[Key.pinned]: "Pinned",
+
+	// Article Series
+	[Key.series]: "Series",
+	[Key.seriesPartOf]: "Part of series",
+	[Key.seriesPart]: "Part {n}",
+	[Key.seriesThisArticle]: "This article",
+	[Key.noSeries]: "No series yet",
+
+	// Encrypted
+	[Key.postEncrypted]: "This post is encrypted",
+	[Key.sakuraEffect]: "Sakura Effect",
+	[Key.effectsSettings]: "Effects Settings",
+	[Key.overlaySettings]: "Transparency Settings",
+	[Key.overlayOpacity]: "Wallpaper Opacity",
+	[Key.overlayBlur]: "Background Blur",
+	[Key.overlayCardOpacity]: "Card Opacity",
+
+	// Settings Panel Tabs
+	[Key.settingsTabAppearance]: "Appearance",
+	[Key.settingsTabEffects]: "Effects",
+
+	// Card Style
+	[Key.cardSettings]: "Card Style",
+	[Key.cardBorder]: "Card Border & Shadow",
+	[Key.cardFollowTheme]: "Card Follow Theme Color",
+
+	// Post List Layout
+	[Key.postListLayout]: "Post List Layout",
+	[Key.postListLayoutList]: "List",
+	[Key.postListLayoutGrid]: "Grid",
+
+	// Site Statistics
+	[Key.siteStats]: "Site Statistics",
+	[Key.siteStatsPostCount]: "Posts",
+	[Key.siteStatsCategoryCount]: "Categories",
+	[Key.siteStatsTagCount]: "Tags",
+	[Key.siteStatsTotalWords]: "Total Words",
+	[Key.siteStatsRunningDays]: "Running Days",
+	[Key.siteStatsLastUpdate]: "Last Activity",
+	[Key.siteStatsDaysAgo]: "{days} days ago",
+	[Key.siteStatsDays]: "{days} days",
+	[Key.today]: "Today",
+
+	// Calendar Component
+	[Key.calendarSunday]: "Sun",
+	[Key.calendarMonday]: "Mon",
+	[Key.calendarTuesday]: "Tue",
+	[Key.calendarWednesday]: "Wed",
+	[Key.calendarThursday]: "Thu",
+	[Key.calendarFriday]: "Fri",
+	[Key.calendarSaturday]: "Sat",
+	[Key.calendarJanuary]: "Jan",
+	[Key.calendarFebruary]: "Feb",
+	[Key.calendarMarch]: "Mar",
+	[Key.calendarApril]: "Apr",
+	[Key.calendarMay]: "May",
+	[Key.calendarJune]: "Jun",
+	[Key.calendarJuly]: "Jul",
+	[Key.calendarAugust]: "Aug",
+	[Key.calendarSeptember]: "Sep",
+	[Key.calendarOctober]: "Oct",
+	[Key.calendarNovember]: "Nov",
+	[Key.calendarDecember]: "Dec",
+	[Key.calendar]: "Site Calendar",
+	[Key.calendarHeatmapWeek]: "Week {week} of {month}, {count} posts",
+	[Key.copied]: "Copied",
+	[Key.copyLink]: "Copy Link",
+
+	// Code Block Collapsible Configuration
+	[Key.codeCollapsibleShowMore]: "Show more",
+	[Key.codeCollapsibleShowLess]: "Show less",
+	[Key.codeCollapsibleExpanded]: "Code block expanded",
+	[Key.codeCollapsibleCollapsed]: "Code block collapsed",
+
+	// Password Protection
+	[Key.passwordProtected]: "Password Protected",
+	[Key.passwordProtectedDesc]:
+		"This content is password protected. Please enter the password to view.",
+	[Key.passwordHint]: "Hint",
+	[Key.passwordPlaceholder]: "Enter password",
+	[Key.passwordSubmit]: "Unlock",
+	[Key.passwordError]: "Incorrect password, please try again.",
+	[Key.passwordProtectedRss]:
+		"This article is encrypted. Please visit the website to view it.",
+
+	// Immersive Reading
+	[Key.immersiveReading]: "Immersive Reading",
+	[Key.enterImmersiveReading]: "Enter Immersive Reading",
+	[Key.exitImmersiveReading]: "Exit Immersive Reading",
+	[Key.tocExpand]: "Expand directory",
+	[Key.tocCollapse]: "Collapse directory",
+};

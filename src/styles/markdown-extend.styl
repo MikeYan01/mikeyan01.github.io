@@ -1,0 +1,497 @@
+.custom-md
+
+  blockquote.admonition
+    .bdm-title
+      display: flex
+      align-items: center
+      margin-bottom: -.9rem
+      font-weight: bold
+
+      &:before
+        content: ' '
+        display: inline-block
+        font-size: inherit
+        overflow: visible
+        margin-right: .6rem
+        height: 1em
+        width: 1em
+        vertical-align: -.126em
+        mask-size: contain
+        mask-position: center
+        mask-repeat: no-repeat
+        transform: translateY(-0.0625rem)
+    &.bdm-tip
+      .bdm-title
+        color: var(--admonitions-color-tip)
+
+        &:before
+          background: var(--admonitions-color-tip)
+          mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' version='1.1' width='16' height='16' aria-hidden='true'%3E%3Cpath d='M8 1.5c-2.363 0-4 1.69-4 3.75 0 .984.424 1.625.984 2.304l.214.253c.223.264.47.556.673.848.284.411.537.896.621 1.49a.75.75 0 0 1-1.484.211c-.04-.282-.163-.547-.37-.847a8.456 8.456 0 0 0-.542-.68c-.084-.1-.173-.205-.268-.32C3.201 7.75 2.5 6.766 2.5 5.25 2.5 2.31 4.863 0 8 0s5.5 2.31 5.5 5.25c0 1.516-.701 2.5-1.328 3.259-.095.115-.184.22-.268.319-.207.245-.383.453-.541.681-.208.3-.33.565-.37.847a.751.751 0 0 1-1.485-.212c.084-.593.337-1.078.621-1.489.203-.292.45-.584.673-.848.075-.088.147-.173.213-.253.561-.679.985-1.32.985-2.304 0-2.06-1.637-3.75-4-3.75ZM5.75 12h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1 0-1.5ZM6 15.25a.75.75 0 0 1 .75-.75h2.5a.75.75 0 0 1 0 1.5h-2.5a.75.75 0 0 1-.75-.75Z'%3E%3C/path%3E%3C/svg%3E")
+
+      &:before
+        background: var(--admonitions-color-tip)
+    &.bdm-note
+      .bdm-title
+        color: var(--admonitions-color-note)
+
+        &:before
+          background: var(--admonitions-color-note)
+          mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' version='1.1' width='16' height='16' aria-hidden='true'%3E%3Cpath fill='var(--admonitions-color-tip)' d='M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z'%3E%3C/path%3E%3C/svg%3E")
+
+      &:before
+        background: var(--admonitions-color-note)
+    &.bdm-important
+      .bdm-title
+        color: var(--admonitions-color-important)
+
+        &:before
+          background: var(--admonitions-color-important)
+          mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' version='1.1' width='16' height='16' aria-hidden='true'%3E%3Cpath d='M0 1.75C0 .784.784 0 1.75 0h12.5C15.216 0 16 .784 16 1.75v9.5A1.75 1.75 0 0 1 14.25 13H8.06l-2.573 2.573A1.458 1.458 0 0 1 3 14.543V13H1.75A1.75 1.75 0 0 1 0 11.25Zm1.75-.25a.25.25 0 0 0-.25.25v9.5c0 .138.112.25.25.25h2a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.749.749 0 0 1 .53-.22h6.5a.25.25 0 0 0 .25-.25v-9.5a.25.25 0 0 0-.25-.25Zm7 2.25v2.5a.75.75 0 0 1-1.5 0v-2.5a.75.75 0 0 1 1.5 0ZM9 9a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z'%3E%3C/path%3E%3C/svg%3E")
+
+      &:before
+        background: var(--admonitions-color-important)
+    &.bdm-warning
+      .bdm-title
+        color: var(--admonitions-color-warning)
+
+        &:before
+          background: var(--admonitions-color-warning)
+          mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' version='1.1' width='16' height='16' aria-hidden='true'%3E%3Cpath d='M6.457 1.047c.659-1.234 2.427-1.234 3.086 0l6.082 11.378A1.75 1.75 0 0 1 14.082 15H1.918a1.75 1.75 0 0 1-1.543-2.575Zm1.763.707a.25.25 0 0 0-.44 0L1.698 13.132a.25.25 0 0 0 .22.368h12.164a.25.25 0 0 0 .22-.368Zm.53 3.996v2.5a.75.75 0 0 1-1.5 0v-2.5a.75.75 0 0 1 1.5 0ZM9 11a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z'%3E%3C/path%3E%3C/svg%3E")
+
+      &:before
+        background: var(--admonitions-color-warning)
+    &.bdm-caution
+      .bdm-title
+        color: var(--admonitions-color-caution)
+
+        &:before
+          background: var(--admonitions-color-caution)
+          mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' version='1.1' width='16' height='16' aria-hidden='true'%3E%3Cpath d='M4.47.22A.749.749 0 0 1 5 0h6c.199 0 .389.079.53.22l4.25 4.25c.141.14.22.331.22.53v6a.749.749 0 0 1-.22.53l-4.25 4.25A.749.749 0 0 1 11 16H5a.749.749 0 0 1-.53-.22L.22 11.53A.749.749 0 0 1 0 11V5c0-.199.079-.389.22-.53Zm.84 1.28L1.5 5.31v5.38l3.81 3.81h5.38l3.81-3.81V5.31L10.69 1.5ZM8 4a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 8 4Zm0 8a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z'%3E%3C/path%3E%3C/svg%3E")
+
+      &:before
+        background: var(--admonitions-color-caution)
+
+  img
+    border-radius: 0.75rem
+
+  hr
+    border-color: var(--line-divider)
+    border-style: dashed
+
+  iframe
+    display: block
+    border-radius: 0.75rem
+    margin: 1.25rem auto
+    max-width: 100%
+
+// ─── 共享图表容器样式 ───────────────────────────────────────────────────────
+// pan-zoom 控制栏、全屏 overlay 等交互样式由 rehype-diagram-panzoom 插件注入
+
+.diagram-container
+  position: relative
+  margin: 1rem 0
+  border-radius: 0.75rem
+  overflow: hidden
+  background: var(--card-bg)
+  transition-property: background-color, box-shadow
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
+  transition-duration: 0.15s
+  touch-action: pan-y pinch-zoom
+
+  &:hover
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1)
+
+.diagram-wrapper
+  padding: 1.5rem
+  display: flex
+  justify-content: center
+  align-items: center
+  min-height: 100px
+  width: 100%
+
+// 响应式设计
+@media (max-width: 768px)
+  .diagram-wrapper
+    padding: 1rem
+
+// ─── Mermaid 图表特定样式 ───────────────────────────────────────────────────
+
+.mermaid-wrapper
+  text-align: center
+
+.mermaid-svg-light,
+.mermaid-svg-dark
+  display: flex
+  justify-content: center
+  align-items: center
+  overflow: hidden
+  width: 100%
+
+  svg
+    display: block
+    width: 100%
+    max-width: 100%
+    max-height: 420px
+    height: auto
+    border-radius: 0.5rem
+    user-select: none
+    transition: transform 0.12s ease-out
+
+// 深色/浅色 SVG 主题切换
+.mermaid-svg-dark
+  display: none
+
+.dark .mermaid-svg-light
+  display: none
+
+.dark .mermaid-svg-dark
+  display: flex
+
+.mermaid-error
+  color: #991b1b
+  background: #fef2f2
+  border: 1px solid #fca5a5
+  border-radius: 0.5rem
+  padding: 1rem
+  margin: 1rem 0
+  text-align: center
+  font-weight: 500
+
+  p
+    margin: 0 0 0.5rem 0
+
+.mermaid-fallback-code
+  text-align: left
+  font-family: monospace
+  font-size: 0.85rem
+  white-space: pre-wrap
+  overflow-x: auto
+  padding: 1rem
+  border-radius: 0.5rem
+  color: #1f2937
+  background: #ffffff
+  border: 1px solid #fecaca
+  font-weight: 400
+  margin-top: 0.5rem
+
+.dark .mermaid-error
+  color: #fecaca
+  background: rgba(127, 29, 29, 0.24)
+  border-color: rgba(252, 165, 165, 0.55)
+
+  .mermaid-fallback-code
+    color: #f3f4f6
+    background: var(--codeblock-bg)
+    border-color: rgba(255, 255, 255, 0.14)
+
+// ─── PlantUML 图表特定样式 ─────────────────────────────────────────────────
+
+.plantuml-image
+  max-width: 100%
+  max-height: 420px
+  height: auto
+  display: block
+  user-select: none
+  -webkit-user-drag: none
+  transition: transform 0.12s ease-out
+
+.plantuml-error
+  color: var(--admonitions-color-warning)
+  background: rgba(239, 68, 68, 0.1)
+  border: 1px solid var(--admonitions-color-warning)
+  border-radius: 0.5rem
+  padding: 1rem
+  margin: 1rem
+  text-align: center
+  font-weight: 500
+
+  p
+    margin: 0 0 0.5rem 0
+
+  button
+    padding: 4px 12px
+    background: var(--primary)
+    color: white
+    border: none
+    border-radius: 4px
+    cursor: pointer
+    transition: all 0.2s ease
+
+    &:hover
+      background: var(--primary-hover)
+      transform: translateY(-1px)
+
+// 深色模式下的 PlantUML 容器背景
+.dark .plantuml-diagram-container
+  background: var(--card-bg)
+
+  .plantuml-image
+    filter: brightness(0.95)
+
+@media (max-width: 768px)
+  .mermaid-svg-light svg,
+  .mermaid-svg-dark svg
+    max-height: 400px
+
+  .plantuml-image
+    max-height: 400px
+
+// ─── 图表 pan-zoom / 全屏交互样式（共享） ───────────────────────────────────
+// 由 rehype-diagram-panzoom 注入的客户端脚本驱动
+
+.diagram-controls
+  position: absolute
+  top: 8px
+  right: 8px
+  display: flex
+  gap: 4px
+  opacity: 0.5
+  transition: opacity 0.2s ease
+  z-index: 10
+
+  &:hover
+    opacity: 1
+
+.diagram-ctrl-btn
+  width: 28px
+  height: 28px
+  border: none
+  border-radius: 6px
+  background: var(--btn-regular-bg)
+  color: var(--btn-content)
+  font-size: 14px
+  line-height: 28px
+  text-align: center
+  cursor: pointer
+  padding: 0
+  display: flex
+  align-items: center
+  justify-content: center
+  transition: all 0.15s ease
+  backdrop-filter: blur(8px)
+
+  &:hover
+    background: var(--btn-regular-bg-hover)
+    transform: translateY(-1px)
+
+  &:active
+    background: var(--btn-regular-bg-active)
+    transform: translateY(0)
+
+.diagram-fullscreen-overlay
+  position: fixed
+  top: 0
+  left: 0
+  width: 100vw
+  height: 100vh
+  background: rgba(0, 0, 0, 0.85)
+  z-index: 9999
+  display: flex
+  align-items: center
+  justify-content: center
+
+.diagram-fs-content
+  width: 90vw
+  height: 85vh
+  cursor: grab
+  display: flex
+  align-items: center
+  justify-content: center
+  overflow: hidden
+  touch-action: none
+
+  &:active
+    cursor: grabbing
+
+  svg, img
+    max-width: 100%
+    max-height: 100%
+    user-select: none
+    -webkit-user-drag: none
+
+.diagram-fs-controls
+  position: fixed
+  top: 16px
+  right: 16px
+  display: flex
+  gap: 6px
+  z-index: 10000
+  background: rgba(255, 255, 255, 0.1)
+  backdrop-filter: blur(12px)
+  padding: 6px
+  border-radius: 10px
+
+  .diagram-ctrl-btn
+    width: 36px
+    height: 36px
+    font-size: 18px
+    border-radius: 8px
+    background: rgba(255, 255, 255, 0.15)
+    color: #fff
+
+    &:hover
+      background: rgba(255, 255, 255, 0.3)
+
+    &:active
+      background: rgba(255, 255, 255, 0.2)
+
+@media (max-width: 768px)
+  .diagram-controls
+    opacity: 0.8
+
+  .diagram-ctrl-btn
+    width: 32px
+    height: 32px
+    font-size: 16px
+
+// ─── Wiki Link 文章卡片 ─────────────────────────────────────────────────────
+a.card-wiki-link
+  display: flex
+  flex-flow: row nowrap
+  align-items: stretch
+  gap: 1rem
+  overflow: hidden
+  background: var(--license-block-bg)
+  position: relative
+  margin: 0.75rem 0
+  padding: 1rem 1.25rem
+  color: var(--tw-prose-body)
+  border-radius: var(--radius-large)
+  text-decoration-line: none
+  text-decoration-thickness: 0px
+  transition: background-color 0.15s cubic-bezier(0.4, 0, 0.2, 1)
+
+  &:hover
+    background-color: var(--btn-regular-bg-hover)
+
+    .wlc-title
+      color: var(--primary)
+
+  &:active
+    scale: .98
+    background-color: var(--btn-regular-bg-active)
+
+  .wlc-info
+    flex: 1 1 auto
+    min-width: 0
+    display: flex
+    flex-direction: column
+    // 顶部对齐，空白只留在下方，不再平分到标题上方
+    justify-content: flex-start
+    gap: 0.35rem
+
+  .wlc-title
+    color: var(--tw-prose-headings)
+    font-size: 1.125rem
+    font-weight: 600
+    line-height: 1.5rem
+    overflow-wrap: break-word
+    transition: color 0.15s cubic-bezier(0.4, 0, 0.2, 1)
+
+  // 加密文章：在标题后附加一个锁图标（与 PostCard 的标题锁一致）
+  .wlc-title.wlc-encrypted
+    &::after
+      content: ' '
+      display: inline-block
+      height: 1em
+      width: 1em
+      margin-left: 0.25rem
+      vertical-align: -0.17em
+      background-color: currentColor
+      mask-size: contain
+      mask-position: center
+      mask-repeat: no-repeat
+      mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z'/%3E%3C/svg%3E")
+
+  .wlc-description
+    color: var(--tw-prose-body)
+    font-size: 0.875rem
+    font-weight: 300
+    line-height: 1.4rem
+    overflow-wrap: break-word
+
+  .wlc-meta
+    display: flex
+    flex-flow: row wrap
+    align-items: center
+    // 日期 / 分类 / 标签这一行贴底，和左侧封面的下边缘对齐
+    margin-top: auto
+    column-gap: 0.75rem
+    row-gap: 0.25rem
+    font-size: 0.75rem
+    color: var(--tw-prose-body)
+    opacity: 0.85
+
+  .wlc-date, .wlc-category
+    &:before
+      content: ' '
+      display: inline-block
+      height: 1.2em
+      width: 1.2em
+      margin-right: 0.25rem
+      vertical-align: -0.22em
+      background-color: currentColor
+      mask-size: contain
+      mask-position: center
+      mask-repeat: no-repeat
+
+  .wlc-date
+    &:before
+      mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zM9 14H7v-2h2v2zm4 0h-2v-2h2v2zm4 0h-2v-2h2v2z'/%3E%3C/svg%3E")
+
+  .wlc-category
+    &:before
+      mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='M10 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2h-8l-2-2z'/%3E%3C/svg%3E")
+
+  .wlc-tags
+    display: flex
+    flex-flow: row wrap
+    column-gap: 0.5rem
+    row-gap: 0.25rem
+
+  .wlc-tag
+    opacity: 0.9
+
+  .wlc-cover
+    flex: 0 0 auto
+    order: -1
+    width: 30%
+    max-width: 13rem
+    min-width: 7rem
+    margin: 0
+    align-self: stretch
+    overflow: hidden
+    border-radius: 0.75rem
+
+    img
+      display: block
+      width: 100%
+      height: 100%
+      margin: 0
+      object-fit: cover
+      border-radius: 0
+      transition: transform 0.3s ease, filter 0.15s ease
+
+  &:hover .wlc-cover img
+    transform: scale(1.08)
+    filter: brightness(0.75)
+
+  // 随机封面图（image: api）容器，客户端重试由 CoverImage 的全局脚本处理
+  .cover-image-container
+    width: 100%
+    height: 100%
+    overflow: hidden
+    background: var(--btn-regular-bg)
+
+    &[data-error="true"] img
+      display: none
+
+  @media (max-width: 640px)
+    flex-flow: column nowrap
+
+    .wlc-cover
+      width: 100%
+      max-width: none
+      min-width: 0
+      aspect-ratio: 2 / 1
+      align-self: stretch

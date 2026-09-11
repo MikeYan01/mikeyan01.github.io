@@ -1,0 +1,26 @@
+@media (max-width: 767px) {
+    .mobile-no-sidebar {
+        display: block !important;
+        width: 100% !important;
+    }
+
+    .mobile-no-sidebar main {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0 !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    .mobile-no-sidebar #content-wrapper {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0 !important;
+    }
+}
+
+/* Empty Swup containers must not participate in the grid. */
+#main-grid > #left-sidebar-dynamic[data-sidebar-placeholder="true"],
+#main-grid > #right-sidebar-dynamic[data-sidebar-placeholder="true"] {
+    display: none !important;
+}
