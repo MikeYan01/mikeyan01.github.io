@@ -28,7 +28,6 @@ import {
 	expressiveCodeConfig,
 	fontConfig,
 	fontsList,
-	mermaidConfig,
 	plantumlConfig,
 	siteConfig,
 } from "./src/config";
@@ -39,12 +38,10 @@ import rehypeEmailProtection from "./src/plugins/rehype-email-protection.mjs";
 import rehypeExternalLinks from "./src/plugins/rehype-external-links.mjs";
 import rehypeFigure from "./src/plugins/rehype-figure.mjs";
 import rehypeImageReferrerPolicy from "./src/plugins/rehype-image-referrerpolicy.mjs";
-import { rehypeMermaid } from "./src/plugins/rehype-mermaid.mjs";
 import { rehypePlantuml } from "./src/plugins/rehype-plantuml.mjs";
 import { parseDirectiveNode } from "./src/plugins/remark-directive-rehype.js";
 import { remarkExcerpt } from "./src/plugins/remark-excerpt.js";
 import { remarkImageGrid } from "./src/plugins/remark-image-grid.js";
-import { remarkMermaid } from "./src/plugins/remark-mermaid.js";
 import { remarkPlantuml } from "./src/plugins/remark-plantuml.js";
 import { remarkReadingTime } from "./src/plugins/remark-reading-time.mjs";
 import { remarkWikiLink } from "./src/plugins/remark-wiki-link.js";
@@ -237,7 +234,6 @@ export default defineConfig({
 				remarkDirective,
 				remarkSectionize,
 				parseDirectiveNode,
-				remarkMermaid,
 				[remarkPlantuml, plantumlConfig],
 			],
 			rehypePlugins: [
@@ -245,7 +241,6 @@ export default defineConfig({
 				[rehypeCallouts, { theme: siteConfig.post.rehypeCallouts.theme }],
 				rehypeSlug,
 				rehypeCodeGroup,
-				[rehypeMermaid, mermaidConfig],
 				rehypePlantuml,
 				rehypeDiagramPanZoom,
 				rehypeFigure,

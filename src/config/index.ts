@@ -23,7 +23,6 @@ export type {
 	DisplaySettingsConfig,
 	ExpressiveCodeConfig,
 	LicenseConfig,
-	MermaidConfig,
 	NavBarConfig,
 	PlantUMLConfig,
 	ProfileConfig,
@@ -49,7 +48,6 @@ export { expressiveCodeConfig } from "./expressiveCodeConfig"; // 代码高亮�
 export { fontConfig, fontsList } from "./fontConfig"; // 字体配置
 export { licenseConfig } from "./licenseConfig"; // 许可证配置
 // 组件配置
-export { mermaidConfig } from "./mermaidConfig"; // Mermaid 图表配置
 export { navBarConfig, navBarSearchConfig } from "./navBarConfig"; // 导航栏配置与搜索配置
 export { plantumlConfig } from "./plantumlConfig"; // PlantUML 图表配置
 export { profileConfig } from "./profileConfig"; // 用户资料配置
