@@ -2,7 +2,7 @@ packages:
   - '.'
 overrides:
   # Legacy Microbundle tooling still requests the vulnerable serializer 4.x.
-  'rollup-plugin-terser@7.0.2>serialize-javascript': '7.0.3'
+  'rollup-plugin-terser@7.0.2>serialize-javascript': '7.0.5'
 allowBuilds:
   esbuild: true
   workerd: true

@@ -5,7 +5,7 @@ settings:
   excludeLinksFromLockfile: false
 
 overrides:
-  rollup-plugin-terser@7.0.2>serialize-javascript: 7.0.3
+  rollup-plugin-terser@7.0.2>serialize-javascript: 7.0.5
 
 importers:
 
@@ -4939,8 +4939,8 @@ packages:
     engines: {node: '>=10'}
     hasBin: true
 
-  serialize-javascript@7.0.3:
-    resolution: {integrity: sha512-h+cZ/XXarqDgCjo+YSyQU/ulDEESGGf8AMK9pPNmhNSl/FzPl6L8pMp1leca5z6NuG6tvV/auC8/43tmovowww==}
+  serialize-javascript@7.0.5:
+    resolution: {integrity: sha512-F4LcB0UqUl1zErq+1nYEEzSHJnIwb3AF2XWB94b+afhrekOUijwooAYqFyRbjYkm2PAKBabx6oYv/xDxNi8IBw==}
     engines: {node: '>=20.0.0'}
 
   set-function-length@1.2.2:
@@ -11239,7 +11239,7 @@ snapshots:
       '@babel/code-frame': 7.29.7
       jest-worker: 26.6.2
       rollup: 2.80.0
-      serialize-javascript: 7.0.3
+      serialize-javascript: 7.0.5
       terser: 5.50.0
 
   rollup-plugin-typescript2@0.32.1(rollup@2.80.0)(typescript@4.9.5):
@@ -11356,7 +11356,7 @@ snapshots:
 
   semver@7.8.5: {}
 
-  serialize-javascript@7.0.3: {}
+  serialize-javascript@7.0.5: {}
 
   set-function-length@1.2.2:
     dependencies:
