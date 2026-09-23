@@ -79,7 +79,7 @@
     "svelte": "^5.57.1",
     "tailwindcss": "^4.3.3",
     "takumi-js": "^2.14.0",
-    "tsx": "^4.23.13",
+    "tsx": "^4.23.14",
     "typescript": "^6.0.3",
     "unist-util-visit": "^5.1.0"
   },
