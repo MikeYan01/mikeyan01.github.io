@@ -95,6 +95,6 @@
     "postcss-import": "^16.1.1",
     "postcss-nesting": "^14.0.1",
     "rehype-callouts": "^2.2.0",
-    "subset-font": "^2.7.0"
+    "subset-font": "^2.9.0"
   }
 }
