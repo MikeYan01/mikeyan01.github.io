@@ -3,6 +3,12 @@ packages:
 overrides:
   # Legacy Microbundle tooling still requests the vulnerable serializer 4.x.
   'rollup-plugin-terser@7.0.2>serialize-javascript': '7.0.5'
+  # PostCSS pins source-map-js 1.2.1 instead of accepting patch updates.
+  'source-map-js@<1.2.2': '^1.2.2'
+  # Older CSS tooling still pins vulnerable selector-parser 6.x releases.
+  'postcss-selector-parser@<7.1.6': '^7.1.6'
+  # Match Markdown's transitive renderer to the patched KaTeX used for its assets.
+  'katex@<0.18.2': '^0.19.0'
 allowBuilds:
   esbuild: true
   workerd: true

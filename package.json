@@ -56,7 +56,6 @@
     "expressive-code-language-badge": "^1.1.0",
     "github-slugger": "^2.0.0",
     "glob": "^13.0.6",
-    "gray-matter": "^4.0.3",
     "hastscript": "^9.0.1",
     "katex": "^0.19.0",
     "marked": "^18.0.14",

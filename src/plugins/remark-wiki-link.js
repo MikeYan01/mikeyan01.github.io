@@ -6,8 +6,8 @@
 import { readdirSync, readFileSync, statSync } from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { parseFrontmatter } from "astro/markdown";
 import { slug } from "github-slugger";
-import matter from "gray-matter";
 import { getApiUrlList, processCoverImageSync } from "../utils/image-utils";
 
 const POSTS_DIR = fileURLToPath(new URL("../content/posts/", import.meta.url));
@@ -99,7 +99,7 @@ function readMetaFile(filePath) {
 
 	let data;
 	try {
-		data = matter(readFileSync(filePath, "utf8")).data ?? {};
+		data = parseFrontmatter(readFileSync(filePath, "utf8")).frontmatter;
 	} catch {
 		return null;
 	}
