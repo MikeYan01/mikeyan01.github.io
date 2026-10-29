@@ -14,6 +14,7 @@
     "build": "tsx scripts/generate-lqips.ts && astro build && tsx scripts/subset-fonts.ts && tsx scripts/minify-inline-scripts.ts && tsx scripts/run-pagefind.ts",
     "preview": "astro preview",
     "astro": "astro",
+    "test:security": "node --test scripts/dependency-security.test.mjs",
     "type-check": "tsc --noEmit --isolatedDeclarations",
     "new-post": "node scripts/new-post.js",
     "format": "biome format --write ./src ./scripts",
