@@ -71,8 +71,8 @@ importers:
         specifier: ^1.2.101
         version: 1.2.101
       '@iconify/svelte':
-        specifier: ^5.2.3
-        version: 5.2.3(svelte@5.57.3)
+        specifier: ^5.2.4
+        version: 5.2.4(svelte@5.57.3)
       '@iconify/types':
         specifier: ^2.0.0
         version: 2.0.0
@@ -122,8 +122,8 @@ importers:
         specifier: ^13.0.6
         version: 13.0.6
       hastscript:
-        specifier: ^9.0.2
-        version: 9.0.2
+        specifier: ^9.0.3
+        version: 9.0.3
       katex:
         specifier: ^0.19.1
         version: 0.19.1
@@ -1476,8 +1476,8 @@ packages:
   '@iconify-json/svg-spinners@1.2.4':
     resolution: {integrity: sha512-ayn0pogFPwJA1WFZpDnoq9/hjDxN+keeCMyThaX4d3gSJ3y0mdKUxIA/b1YXWGtY9wVtZmxwcvOIeEieG4+JNg==}
 
-  '@iconify/svelte@5.2.3':
-    resolution: {integrity: sha512-RV08FAHSsUW3/4WJsfoMYGbNt413Eh+4thU864pmX2QGFaem2P7zTcANYwkSOnApGlpYhMXJM813tN1tfk68ug==}
+  '@iconify/svelte@5.2.4':
+    resolution: {integrity: sha512-rKIsZikeLb2D30WaOoA/B5ggwm9KelOu0gXizmPHCjcwBNNm6+AGi+16gQ9HNEfm6MvMQqEuGKcp068ZeAsiNw==}
     peerDependencies:
       svelte: '>5.0.0'
 
@@ -3509,6 +3509,9 @@ packages:
 
   hastscript@9.0.2:
     resolution: {integrity: sha512-ghcIWJlrROwOddvAvbt0AAnLTyt/Xt02Ucc6VfXejSPESai+q24iROd0MjOYUEhJiI/b4vokkm9ZHb4MNOOizA==}
+
+  hastscript@9.0.3:
+    resolution: {integrity: sha512-1ALZXSmCGmW3h8AMz4R4+QKSKFi7sNgXLVwmwB8FYVtl1CwQ3WDkSAEY/d5tp1g/vbQgq2s1WlHgfO3jbw1TsA==}
 
   html-escaper@3.0.3:
     resolution: {integrity: sha512-RuMffC89BOWQoY0WKGpIhn5gX3iI54O6nRA0yC124NYVtzjmFWBIiFd8M0x+ZdX0P9R4lADg1mgP8C7PxGOWuQ==}
@@ -7317,7 +7320,7 @@ snapshots:
       hast-util-select: 6.0.4
       hast-util-to-html: 9.0.5
       hast-util-to-text: 4.0.3
-      hastscript: 9.0.2
+      hastscript: 9.0.3
       postcss: 8.5.31
       postcss-nested: 7.0.2(postcss@8.5.31)
       unist-util-visit: 5.2.0
@@ -7380,7 +7383,7 @@ snapshots:
     dependencies:
       '@iconify/types': 2.0.0
 
-  '@iconify/svelte@5.2.3(svelte@5.57.3)':
+  '@iconify/svelte@5.2.4(svelte@5.57.3)':
     dependencies:
       '@iconify/types': 2.0.0
       svelte: 5.57.3
@@ -9514,7 +9517,7 @@ snapshots:
   hast-util-from-dom@5.0.1:
     dependencies:
       '@types/hast': 3.0.5
-      hastscript: 9.0.2
+      hastscript: 9.0.3
       web-namespaces: 2.0.1
 
   hast-util-from-html-isomorphic@2.0.0:
@@ -9538,7 +9541,7 @@ snapshots:
       '@types/hast': 3.0.5
       '@types/unist': 3.0.3
       devlop: 1.1.0
-      hastscript: 9.0.2
+      hastscript: 9.0.3
       property-information: 7.2.0
       vfile: 6.0.3
       vfile-location: 5.0.3
@@ -9713,6 +9716,14 @@ snapshots:
       '@types/hast': 3.0.5
 
   hastscript@9.0.2:
+    dependencies:
+      '@types/hast': 3.0.5
+      comma-separated-tokens: 2.0.3
+      hast-util-parse-selector: 4.0.0
+      property-information: 7.2.0
+      space-separated-tokens: 2.0.2
+
+  hastscript@9.0.3:
     dependencies:
       '@types/hast': 3.0.5
       comma-separated-tokens: 2.0.3
@@ -11626,7 +11637,7 @@ snapshots:
       '@types/hast': 3.0.5
       hast-util-from-html: 2.0.3
       hast-util-is-element: 3.0.0
-      hastscript: 9.0.2
+      hastscript: 9.0.3
       unist-util-visit: 5.2.0
 
   rehype-code-group@0.3.1(typescript@6.0.3):
