@@ -56,7 +56,7 @@
     "expressive-code-collapsible": "^0.1.0",
     "expressive-code-language-badge": "^1.1.0",
     "github-slugger": "^2.0.0",
-    "glob": "^13.0.7",
+    "glob": "^14.0.4",
     "hastscript": "^9.0.3",
     "katex": "^0.19.1",
     "marked": "^18.1.3",
